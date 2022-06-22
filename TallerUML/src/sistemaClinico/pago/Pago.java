@@ -1,5 +1,6 @@
 package sistemaClinico.pago;
 
-public class Pago {
+public interface Pago {
 
+	public boolean realizarPago(float monto);
 }

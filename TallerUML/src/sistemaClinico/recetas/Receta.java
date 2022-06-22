@@ -1,5 +1,9 @@
 package sistemaClinico.recetas;
 
-public class Receta {
+import java.util.Date;
 
+public class Receta {
+ protected Date fecha;
+ 
+ public Receta(){}
 }
