@@ -1,5 +1,7 @@
 package sistemaClinico.historiaClinica;
 
-public class HistoriaClinica {
+
+
+public class HistoriaClinica<E> {
 
 }
