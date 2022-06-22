@@ -11,6 +11,14 @@ public class Cita {
 	public Paciente paciente;
 	public Doctor doctor;
 	
+	public Cita(Date fecha, boolean pagada, String registradoPor, Paciente paciente, Doctor doctor) {
+		super();
+		this.fecha = fecha;
+		this.pagada = pagada;
+		this.registradoPor = registradoPor;
+		this.paciente = paciente;
+		this.doctor = doctor;
+	}
 	public Paciente getPaciente() {
 		return paciente;
 	}
