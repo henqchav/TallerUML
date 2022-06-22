@@ -21,6 +21,10 @@ public class Cita {
 		this.paciente = paciente;
 		this.doctor = doctor;
 	}
+	
+	public void realizarPago (float pago) {
+		this.pagada= true;
+	}
 	public Paciente getPaciente() {
 		return paciente;
 	}
@@ -33,9 +37,7 @@ public class Cita {
 	public void setDoctor(Doctor doctor) {
 		this.doctor = doctor;
 	}
-	public void realizarPago (float pago) {
-		this.pagada= true;
-	}
+
 	public Date getFecha() {
 		return fecha;
 	}
