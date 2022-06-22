@@ -1,11 +1,15 @@
 package sistemaClinico.usuarios;
 
-public class Doctor extends Persona {
+import java.util.ArrayList;
+
+import sistemaClinico.historiaClinica.Cita;
+
+public class Doctor<E> extends Persona {
 	protected int regDoctor;
 	protected String especialidad;
-	protected ArrayList<Cita> cita;
+	protected ArrayList<E> cita;
 	
-    public Doctor(int regDoctor, String especialidad, ArrayList<Cita> cita) {
+    public Doctor(int regDoctor, String especialidad, ArrayList<E> cita) {
 		super();
 		this.regDoctor = regDoctor;
 		this.especialidad = especialidad;
@@ -23,9 +27,13 @@ public class Doctor extends Persona {
 	public void setEspecialidad(String especialidad) {
 		this.especialidad = especialidad;
 	}
-	
-	
-	
+		
+	public ArrayList<E> getCita() {
+		return cita;
+	}
+	public void setCita(ArrayList<E> cita) {
+		this.cita = cita;
+	}
 	public void recetar(){}
     public void agregarPlanNut(){}
     public void ImprimirReceta(){}

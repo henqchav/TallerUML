@@ -7,11 +7,11 @@ import sistemaClinico.usuarios.Paciente;
 
 public class Cita {
 
-	public Date fecha;
-	public boolean pagada;
-	public String registradoPor;
-	public Paciente paciente;
-	public Doctor doctor;
+	protected Date fecha;
+	protected boolean pagada;
+	protected String registradoPor;
+	protected Paciente paciente;
+	protected Doctor doctor;
 	
 	public Cita(Date fecha, boolean pagada, String registradoPor, Paciente paciente, Doctor doctor) {
 		super();

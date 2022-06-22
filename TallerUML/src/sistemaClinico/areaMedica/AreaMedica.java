@@ -3,9 +3,9 @@ package sistemaClinico.areaMedica;
 import sistemaClinico.usuarios.Doctor;
 
 public class AreaMedica {
-	public Doctor doctor;
-	public String especialidad;
-	public float costo;
+	protected Doctor doctor;
+	protected String especialidad;
+	protected float costo;
 	
 	public AreaMedica(Doctor doctor, String especialidad, float costo) {
 		super();

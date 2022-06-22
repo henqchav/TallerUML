@@ -3,10 +3,10 @@ package sistemaClinico.historiaClinica;
 import java.util.ArrayList;
 
 public class HistoriaClinica<E> {
-	public int nro;
-	public ArrayList<E> enfermdades = new ArrayList<E>();
-	public ArrayList<E> alergias = new ArrayList<E>();
-	public ArrayList<E> otros = new ArrayList<E>();
+	protected int nro;
+	protected ArrayList<E> enfermdades = new ArrayList<E>();
+	protected ArrayList<E> alergias = new ArrayList<E>();
+	protected ArrayList<E> otros = new ArrayList<E>();
 	
 	public HistoriaClinica(int nro, ArrayList<E> enfermdades, ArrayList<E> alergias, ArrayList<E> otros) {
 		super();
