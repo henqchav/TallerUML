@@ -39,6 +39,6 @@ public class Doctor<E> extends Persona {
     public void ImprimirReceta(){}
     public void registrarSecretaria(){}
 	
-	public void AtenderPaciente(){}
+	public Cita AtenderPaciente(){}
 	
 }
