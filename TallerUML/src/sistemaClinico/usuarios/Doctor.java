@@ -1,19 +1,21 @@
 package sistemaClinico.usuarios;
 
 import java.util.ArrayList;
+import java.util.Queue;
 
 import sistemaClinico.historiaClinica.Cita;
+import sistemaClinico.recetas.Medicamento;
 
-public class Doctor<E> extends Persona {
+public class Doctor extends Persona {
 	protected int regDoctor;
 	protected String especialidad;
-	protected ArrayList<E> cita;
+	protected Queue<Cita> citas;
 	
-    public Doctor(int regDoctor, String especialidad, ArrayList<E> cita) {
+    public Doctor(int regDoctor, String especialidad, Queue<Cita> citas) {
 		super();
 		this.regDoctor = regDoctor;
 		this.especialidad = especialidad;
-	    	this.cita = cita;
+	    	this.citas = citas;
 	}
 	public int getRegDoctor() {
 		return regDoctor;
@@ -28,17 +30,25 @@ public class Doctor<E> extends Persona {
 		this.especialidad = especialidad;
 	}
 		
-	public ArrayList<E> getCita() {
-		return cita;
+	public Queue<Cita> getCitas() {
+		return citas;
 	}
-	public void setCita(ArrayList<E> cita) {
-		this.cita = cita;
+	public void setCita(Queue<Cita> cita) {
+		this.citas = cita;
 	}
-	public void recetar(){}
-    public void agregarPlanNut(){}
-    public void ImprimirReceta(){}
+	public Medicamento recetar(Paciente paciente){
+		return new Medicamento();
+	}
+    public void agregarPlanNut(Paciente paciente){}
+    public void ImprimirReceta(Medicamento medicamento){}
     public void registrarSecretaria(){}
 	
-	public Cita AtenderPaciente(){}
+	public void AtenderPaciente(){
+		Cita cita = citas.poll();
+		Paciente paciente = cita.getPaciente();
+		recetar(paciente);
+		ImprimirReceta(recetar(paciente));
+		agregarPlanNut(paciente);
+	}
 	
 }
