@@ -4,7 +4,7 @@ import sistemaClinico.historiaClinica.Cita;
 
 public class Paciente extends Persona{
 	protected String email;
-	private Cita cita;
+	protected Cita cita;
 	public Paciente(String email) {
 		super();
 		this.email = email;
