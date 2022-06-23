@@ -21,6 +21,12 @@ public class Cita {
 		this.paciente = paciente;
 		this.doctor = doctor;
 	}
+	public Cita(Date fecha, boolean pagada, String registradoPor) {
+		super();
+		this.fecha = fecha;
+		this.pagada = pagada;
+		this.registradoPor = registradoPor;
+	}
 	
 	public void realizarPago (float pago) {
 		this.pagada= true;
