@@ -3,4 +3,5 @@
 # Diagramas de secuencia
 
 
-![image](https://user-images.githubusercontent.com/93171012/175180763-90ebc877-5fd3-4ef0-a2d7-a64cd9fc474f.png)
+![Untitled Diagram drawio (3)](https://user-images.githubusercontent.com/85514342/175181621-2f5aa117-b1cb-4478-9fc9-cc1cfc3cbf08.png)
+
